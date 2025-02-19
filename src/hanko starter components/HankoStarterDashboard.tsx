@@ -4,12 +4,10 @@ import React from 'react'
 import './hanko-starter-style.css'
 
 import { useUserData } from '@/hooks/useUserData';
-import { useSessionData } from '@/hooks/useSessionData';
 
 const HankoStarterDashboard = () => {
 
-  const { id, email, loading: userDataLoading, error: userDataError } = useUserData();
-  const { userID, jwt, isValid, loading: sessionDataLoading, error: sessionDataError } = useSessionData();
+  const { id, email } = useUserData();
 
   return (
     <div className='hankoStarterDashboard'>
