@@ -7,7 +7,7 @@ import { useUserData } from '@/hooks/useUserData';
 
 const HankoStarterDashboard = () => {
 
-  const { id, email } = useUserData();
+  const { id, email} = useUserData();
 
   return (
     <div className='hankoStarterDashboard'>
