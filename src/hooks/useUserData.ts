@@ -5,7 +5,7 @@ const hankoApi = process.env.NEXT_PUBLIC_HANKO_API_URL || "";
 
 interface HankoUser {
   id: string;
-  email: string;
+  email: string | undefined;
   loading: boolean;
   error: string | null;
 }
@@ -19,11 +19,7 @@ export function useUserData(): HankoUser {
     error: null,
   });
 
-  useEffect(() => {
-    import("@teamhanko/hanko-elements").then(({ Hanko }) =>
-      setHanko(new Hanko(hankoApi))
-    );
-  }, []);
+  useEffect(() => setHanko(new Hanko(hankoApi)), []);
 
   useEffect(() => {
     hanko?.user
