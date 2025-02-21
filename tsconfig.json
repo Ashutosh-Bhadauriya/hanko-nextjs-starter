@@ -33,7 +33,7 @@
     "**/*.tsx",
     "next-env.d.ts",
     ".next/types/**/*.ts"
-, "../hanko-nextjs-starter-no-middleware/src/custom.d.ts"  ],
+  ],
   "exclude": [
     "node_modules"
   ]

@@ -21,10 +21,8 @@ export async function validateCurrentSession(){
         
         const verifiedResponse = await response.json();
         console.log(verifiedResponse)
-    
-        if(!verifiedResponse.is_valid) throw new Error('JWT is not valid');
 
-        return true;
+        return verifiedResponse.is_valid;
         
       } catch (error) {
         console.log(error)

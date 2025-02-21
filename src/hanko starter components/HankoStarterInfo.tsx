@@ -8,7 +8,7 @@ const HankoStarterInfo = () => {
       <h1>Hanko NextJS starter.</h1>
       <h2>
         This repository is an example of an implementation of <span>Hanko</span> in <span>Next.JS</span>.
-        Specifically the <span>App Router</span>
+        Specifically the <span>App Router</span> without middleware.
       </h2>
       <h2>
         Trough the use of the <span>&lt;Hanko-Auth&gt;</span> and <span>&lt;Hanko-Profile&gt;</span> components you can quickly and effectively set up a Sign-In page or a User Profile page for your application.
