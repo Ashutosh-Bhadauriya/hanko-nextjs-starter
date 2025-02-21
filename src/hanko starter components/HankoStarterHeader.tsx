@@ -23,7 +23,7 @@ const HankoStarterHeader = () => {
   if(pathname.includes('profile')){
     menu = 
     <Link href={'/dashboard'}>
-      <button>dashboard</button>
+      <button>Dashboard</button>
     </Link>
   }
 
